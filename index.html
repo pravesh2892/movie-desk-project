@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Movie Deck</title>
+		<script
+			defer
+			src="https://kit.fontawesome.com/4901832a95.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="style.css" />
+		<script src="script.js" defer></script>
+	</head>
+	<body>
+		<header class="header">
+			<a href="#">Movie Deck</a>
+		</header>
+		<section class="search__sort">
+			<form class="form" id="form">
+				<input
+					type="search"
+					class="search__bar"
+					id="search"
+					autocomplete="off"
+					placeholder="Search by name..."
+				/>
+				<button type="submit" value="Search" class="btn btn__black search__btn">
+					Search
+				</button>
+			</form>
+			<div class="sort__div">
+				<button class="btn" id="sort__by__date">
+					Sort by date (oldest to latest)
+				</button>
+				<button class="btn" id="sort__by__rating">
+					Sort by rating (least to most)
+				</button>
+			</div>
+		</section>
+		<main id="main">
+			<div class="tabs">
+				<button id="all__btn" class="btn active-tab">All</button>
+				<button id="favorites__btn" class="btn">Favorites</button>
+			</div>
+			<section class="movies">
+				<ul id="movies__list"></ul>
+			</section>
+			<div id="pagination__container">
+				<button class="btn" id="previous__page__btn" disabled>Previous</button>
+				<button class="btn" id="current__page__btn">Current page: 1</button>
+				<button class="btn" id="next__page__btn">Next</button>
+			</div>
+		</main>
+		<footer class="footer">
+			<p class="footer__text">© 2023 Movie Deck</p>
+		</footer>
+	</body>
+</html>
