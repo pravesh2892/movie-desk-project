@@ -8,12 +8,15 @@
 	overflow-x: hidden;
 }
 :root {
-	--primary-color: #313233;
+	--primary-color: rgb(20, 16, 109);
 	--secondary-color: #eeeef3;
 }
 body {
 	font-family: "Poppins", sans-serif;
-	background-color: var(--secondary-color);
+	/* background-color: var(--secondary-color); */
+	background: rgb(52,42,223);
+    background: linear-gradient(90deg, rgba(52,42,223,1) 0%, rgba(188,57,213,1) 35%, rgba(0,241,255,1) 100%);
+	
 }
 
 
@@ -25,8 +28,8 @@ body {
 	cursor: pointer;
 	border: 1px solid transparent;
 	transition: all 0.3s ease;
-	background-color: #ccc;
-	color: black;
+	background-color: #cccccc;
+	color: rgb(0, 0, 0);
 }
 .btn:hover {
 	background-color: #fff;
@@ -52,9 +55,9 @@ body {
 }
 
 @keyframes color-change {
-    0% { color: rgb(0, 204, 255); }
-    50% { color: rgb(255, 0, 221); }
-    100% { color: rgb(0, 255, 21); }
+    0% { color: rgba(52,42,223,1); }
+    50% { color: rgba(188,57,213,1) ; }
+    100% { color:rgba(0,241,255,1); }
   }
 .search__sort {
 	padding: 10px;
@@ -63,7 +66,9 @@ body {
 	align-items: center;
 	flex-direction: column;
 	gap: 10px;
-	background-color: var(--secondary-color);
+	/* background-color: var(--secondary-color); */
+	background: rgb(52,42,223);
+    background: linear-gradient(90deg, rgba(52,42,223,1) 0%, rgba(188,57,213,1) 35%, rgba(0,241,255,1) 100%);
 }
 .form {
 	display: flex;
